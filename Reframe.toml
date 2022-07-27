@@ -1,0 +1,43 @@
+[reframe]
+name = "simple-nft-site"
+author = "anvie"
+min_version = "0.3.4"
+
+[project]
+name = "SimpleNFT"
+version = "0.1.0"
+ignore_dirs = [
+    "target", "build"
+]
+
+finish_text = """Usage:
+
+    $ cd $name_kebab_case$
+
+Install prerequisites:
+
+    $ yarn install
+
+Development
+    
+    $ yarn dev
+"""
+
+[[param]]
+description = { ask = "Description ?", default = "My ERC-721 Smart contract" }
+
+[[param]]
+author_name = { ask = "Author name?", default="Author" }
+
+[[param]]
+author_email = { ask = "Author email?", default="author@example.com" }
+
+[[param]]
+base_url = { ask = "Base URL?", default="https://example.com" }
+
+[[param]]
+network_id = { ask = "Network ID?", default="polygon" }
+
+[[param]]
+smart_contract_address = { ask = "Smart contract address?", default="0x0" }
+
